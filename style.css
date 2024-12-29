@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .game-container {
+    text-align: center;
+    background-color: #121212; /* Dark container */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); /* Neon glow around the game */
+    width: 320px; /* Adjusted to fit the grid comfortably */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #0ff; /* Neon cyan for title */
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; /* Glowing effect for title */
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto; /* Center the grid horizontally */
+    justify-items: center; /* Center items inside the grid */
+    align-items: center; /* Center items inside the grid vertically */
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #222; /* Darker cell background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #0ff; /* Neon border for the cells */
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 0 5px #0ff;
+  }
+  
+  .cell:hover {
+    background-color: #0ff; /* Neon glow on hover */
+    color: #222; /* Change text color to dark when hovered */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 15px #0ff; /* Glowing effect */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #0ff; /* Neon cyan button */
+    color: #222;
+    border: 2px solid #0ff;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #222; /* Dark background for button on hover */
+    color: #0ff;
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .message {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ff00ff; /* Neon magenta for message */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; /* Glowing effect */
+  }
+  
